@@ -40,4 +40,4 @@ Excecute the script twitterBot.py with the command line inside the project folde
 ```
 $ python twitterBot.py
 ```
-The bot will only Reply tweets while will be executing.
+The bot will only Reply tweets while the script will be executing.
