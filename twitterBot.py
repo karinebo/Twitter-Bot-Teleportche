@@ -58,7 +58,7 @@ class BotStreamer(tweepy.StreamListener):
         username = status.user.screen_name 
         status_id = status.id
         textTweet = status.text
-        textTweet = textTweet.replace("@teleporttche ", "")
+        textTweet = textTweet.replace("@appname ", "")
         review = [textTweet]
         #Montagem da mensagem Reply
         reply = predictSentiment(review)
@@ -79,7 +79,7 @@ try:
     stream = tweepy.Stream(auth, myStreamListener)
     
     # Filtra os tweets de acordo com o nome da aplicação criada anteriormente
-    stream.filter(track=['@teleporttche'])
+    stream.filter(track=['@appname'])
 except KeyboardInterrupt:
     print("Saindo")
     sys.exit()
