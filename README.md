@@ -7,18 +7,17 @@ Twitter Bot to reply tweets (@yourappname) identifying sentiments (Positive and 
 
 You need the follow dependencies in your development environment:
 
-  [Python:] (https://www.python.org/downloads/)
+  [Python:](https://www.python.org/downloads/)
 
-  [Tweepy:] (https://pypi.org/project/tweepy/)
+  [Tweepy:](https://pypi.org/project/tweepy/)
 
-  [FastText:] (https://pypi.org/project/fasttext/)
+  [FastText:](https://pypi.org/project/fasttext/)
 
 ### Step 2: Download the train dataset
 
-[Amazon Reviews for Sentiment Analysis:] (https://www.kaggle.com/bittlingmayer/amazonreviews)
+  [Amazon Reviews for Sentiment Analysis:](https://www.kaggle.com/bittlingmayer/amazonreviews)
 
 Unzip the content inside the folder "./amazonreviews"
-
 
 ### Step 3: Create a Twitter app
 
@@ -41,3 +40,4 @@ Excecute the script twitterBot.py with the command line inside the project folde
 ```
 $ python twitterBot.py
 ```
+The bot will only Reply tweets while will be executing.
