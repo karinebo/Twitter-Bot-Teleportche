@@ -1,43 +1,44 @@
 # Twitter Bot - Teleportche
 
-Twitter Bot to reply tweets (@yourappname) identifying sentiments (Positive and Negative) and probabilities with FastText
+Bot no Twitter para responder (@yourappname) de acordo com o sentimento identificado no Tweet, estamos considerando apenas Positivo e Negativo. Além do sentimento, também a probabilidade da resposta.
 
+### Step 1: Instalar dependências
 
-### Step 1: Install dependencies
+Será necessário instalar as seguintes dependências no seu ambiente de desenvolvimento:
 
-You need the follow dependencies in your development environment:
+  Linguagem de programação utilizada: [Python](https://www.python.org/downloads/)
 
-  [Python](https://www.python.org/downloads/)
+  Biblioteca de comunicação com o Twitter: [Tweepy](http://www.tweepy.org/)
 
-  [Tweepy](http://www.tweepy.org/)
+  Biblioteca para treinamento do modelo de predição: [FastText](https://pypi.org/project/fasttext/)
 
-  [FastText](https://pypi.org/project/fasttext/)
+### Step 2: Fazer o download do conjunto de dados para treinamento:
 
-### Step 2: Download the train dataset
+Reviews de clientes da amazon:
 
   [Amazon Reviews for Sentiment Analysis:](https://www.kaggle.com/bittlingmayer/amazonreviews)
 
-  Unzip the content inside the folder "./amazonreviews"
+  Descompactar os arquivos, que deverão ficar na pasta "./amazonreviews" dentro da pasta do projeto.
 
-### Step 3: Create a Twitter app
+### Step 3: Criar uma aplicação no Twitter:
 
+Para criar uma aplicação, é necessário estar logado com uma conta no Twitter.
 https://apps.twitter.com/app/new
 
-Pay attention to the filds:
-Name: That will be the @name that your bot will the mentioned on Twitter
-Website: If you don't have a website, it is possible to try http://127.0.0.1
+Observação:
+Name: Será o nome da aplicação (@yourappname) que o bot irá monitorar e responder
+Website: Se você não tiver um website, pode ser utilizado http://127.0.0.1
 
-### Step 4: Clone this repository
+### Step 4: Clonar este repositório
 
-Please, clone this repo to your local development environment.
-Replace the information in secrets.py with your keys and access tokens from the Twitter app you just created.
+Após clonar este repositório, as informações do arquivo secrets.py devem ser substituídas pelas chaves e tokens da sua aplicação no Twitter.
 
+### Step 5: Executar
 
-### Step 5: Excecute
-
-Excecute the script twitterBot.py with the command line inside the project folder:
+Excecute o script twitterBot.py com a linha de comando abaixo dentro da pasta do projeto:
+(Isso funciona para mac e linux, não sei como é no Windows)
 
 ```
 $ python twitterBot.py
 ```
-The bot will only Reply tweets while the script will be executing.
+O bot irá responder aos tweets apenas enquanto o scripts estiver executando.
